@@ -1,0 +1,61 @@
+{
+  "name": "n8n-nodes-turbogen",
+  "version": "0.1.0",
+  "description": "n8n community node for Turbogen: pay-as-you-go AI video, image and audio generation (Seedance 2.5, Kling, Veo 3.1 Fast, Nano Banana Pro and more).",
+  "license": "MIT",
+  "homepage": "https://turbogen.app/?src=n8n",
+  "keywords": [
+    "n8n-community-node-package",
+    "turbogen",
+    "ai-video",
+    "ai-image",
+    "video-generation",
+    "image-generation",
+    "seedance",
+    "kling",
+    "veo"
+  ],
+  "author": {
+    "name": "Turbogen",
+    "email": "support@turbogen.app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turbogenai/n8n-nodes-turbogen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/turbogenai/n8n-nodes-turbogen/issues"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/TurbogenApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Turbogen/Turbogen.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "eslint": "9.39.4",
+    "prettier": "3.8.3",
+    "release-it": "20.2.0",
+    "typescript": "5.9.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}

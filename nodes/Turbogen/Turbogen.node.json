@@ -1,0 +1,10 @@
+{
+	"node": "n8n-nodes-turbogen.turbogen",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Utility"],
+	"resources": {
+		"credentialDocumentation": [{ "url": "https://turbogen.app/api-docs" }],
+		"primaryDocumentation": [{ "url": "https://turbogen.app/api-docs" }]
+	}
+}
